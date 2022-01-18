@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form One</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <div class="main">
+       
+        <form action="" id="form">
+            <label for="form"  class="label"><span class="texts">
+               <h1>My Form</h1>
+            </span></label>
+            <div class="name">
+                <label class="label" for="firstName"> Name :-</label>
+                  <input class="input" type="text" name="" id="firstName" required placeholder="First Name">
+                  <input class="input" type="text" name="" id="lastName" required placeholder="Last Name">
+                </div>
+
+            <div class="email">
+                <label class="label" for="email">Email :- </label>
+                <input class="input" type="email" name="email" id="emailid" required placeholder="yourid@whatever.etc">
+            </div>
+            <div class="phone">
+                <label class="label" for="phone">Phone :-</label>
+                <select name="code" id="code" >
+                    <option selected value="+91">+91</option>
+                    <option value="+1">+1</option>
+                    <option value="+21">+21</option>
+                </select>
+                <input type="tel" name="number" placeholder="9630******"  required class="input" id="number" max="10">
+            </div>
+            <div class="choice">
+                <label class="label" for="checkbox">How se should contact you?</label> <br>
+                <input type="checkbox" name="contact"  checked value="Email" id="gg"> <span class="text">Email</span>
+                <input type="checkbox" name="contact" value="Phone" id="gg"> <span class="text">Call</span>
+                <input type="checkbox" name="contact" value="Whatsapp" id="gg"> <span class="text">Whatsapp</span>
+                <input type="checkbox" name="contact" value="Twitter" id="gg"> <span class="text">Twitter</span>
+            </div>
+
+            <div class="gender">
+                <label for="radio" class="label">Gender :- </label>
+                <input type="radio" name="gender" checked value="male" id=""> <span class="text">Male</span> 
+                <input type="radio" name="gender" value="female" id=""><span class="text">Female</span>
+                <input type="radio" name="gender" value="other" id=""><span class="text">Gay</span>
+            </div>
+
+            <hr>
+            <div class="last">
+            <span class="texts">
+                Anything you want to say about your experience? <br>
+            </span>
+            <br>
+            <textarea placeholder="Type your experience here" name="experience_with_us" id="" maxlength="250" class="textarea" cols="60" rows="10"></textarea>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <button type="submit" class="b1">Submit</button>
+        <button type="reset" class="b1">Reset</button>
+        </form>
+    </div>
+
+</body>
+</html>
